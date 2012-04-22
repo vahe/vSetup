@@ -1,3 +1,6 @@
+<html>
+<body>
+<p>
 This shell script was created to get a vps up and running in a minimal time.
 
 Requirements:
@@ -16,3 +19,7 @@ This was tested on a Debian 6 32bit minimal template on OpenVZ VPS.
 
 The script closely follows the following guide posted by Ben B. at SliceHost:
 http://articles.slicehost.com/2009/3/31/debian-lenny-setup-page-1
+
+</p>
+</body>
+</html>
