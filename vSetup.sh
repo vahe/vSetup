@@ -10,18 +10,18 @@ adduser $2
 echo " "
 echo " "
 echo "---------------------------------"
-echo "USER VAHE HAS BEEN ADDED"
+echo "USER $2 HAS BEEN ADDED"
 echo "---------------------------------"
 echo " "
 echo " "
 usermod -a -G sudo $2
 echo " "
 echo " "
-echo "VAHE ADDED TO SUDOERS"
+echo "$2 ADDED TO SUDOERS"
 echo "---------------------------------"
 echo " "
 echo " "
-mkdir /home/vahe/.ssh
+mkdir /home/$2/.ssh
 echo " "
 echo " "
 echo "---------------------------------"
