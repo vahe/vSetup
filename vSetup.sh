@@ -1,11 +1,11 @@
 #!/bin/bash
 apt-get update
-apt-get install nano sudo wget
+apt-get install nano sudo wget locales-all
 echo " "
 echo " "
-echo "---------------------------------"
-echo "WGET, NANO AND SUDO ARE INSTALLED"
-echo "---------------------------------"
+echo "------------------------------------------"
+echo "WGET, NANO, SUDO and LOCALES ARE INSTALLED"
+echo "------------------------------------------"
 adduser $2
 echo " "
 echo " "
