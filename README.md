@@ -3,6 +3,7 @@ This shell script was created to get a vps up and running in a minimal time.
 
 # Requirements:
   Must be run as root
+  Debian 6
 
 # Instructions:
   Run with the following command: 
