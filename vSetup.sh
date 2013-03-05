@@ -47,7 +47,7 @@ echo "AllowUsers $2" >> /etc/ssh/sshd_config
 #sed -i "s/PermitRootLogin yes/PermitRootLogin no/g" /etc/ssh/sshd_config
 #sed -i "s/#*PasswordAuthentication yes/PasswordAuthentication no/g" /etc/ssh/sshd_config
 #sed -i "s/#*PermitRootLogin yes/PermitRootLogin no/g" /etc/ssh/sshd_config
-service ssh restart
+service ssh reload
 echo ""
 echo ""
 echo "---------------------------------"
