@@ -21,9 +21,6 @@ echo "$2 ADDED TO SUDO GROUP"
 echo "---------------------------------"
 echo " "
 echo " "
-mkdir /home/$2/.ssh
-echo " "
-echo " "
 echo "---------------------------------"
 echo "RUN THE FOLLOWING ON THE LOCAL MACHINE"
 echo "---------------------------------"
@@ -32,16 +29,11 @@ echo "If you did, you should have two files, usually called id_rsa and id_rsa.pu
 echo "If you didn't, run the following command to generate the keys first:"
 echo "       ssh-keygen -t rsa"
 echo "now run: "
-echo scp "~/."ssh/id_rsa.pub root@$1:~
+echo ssh-copy-id -i ~/.ssh/id_rsa.pub $2@$1
 echo " "
 echo "---------------------------------"
 read -p "Press [Enter] when done"
-sudo mv ~/id_rsa.pub /home/$2/.ssh/authorized_keys
-sudo chown -R $2:$2 /home/$2/.ssh
-sudo chmod 700 /home/$2/.ssh
-sudo chmod 600 /home/$2/.ssh/authorized_keys
 
-echo ""
 echo ""
 echo ""
 #configure ssh
