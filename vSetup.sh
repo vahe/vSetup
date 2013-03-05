@@ -30,6 +30,8 @@ echo "If you didn't, run the following command to generate the keys first:"
 echo "       ssh-keygen -t rsa"
 echo "now run: "
 echo ssh-copy-id -i ~/.ssh/id_rsa.pub $2@$1
+echo " or if you are on Mac OS X, try: "
+echo "cat ~/.ssh/id_rsa.pub | ssh $2@$1 'mkdir -m 700 ~/.ssh; cat  >> ~/.ssh/authorized_keys ; chmod 600 ~/.ssh/authorized_keys'"
 echo " "
 echo "---------------------------------"
 read -p "Press [Enter] when done"
