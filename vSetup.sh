@@ -17,7 +17,7 @@ echo " "
 usermod -a -G sudo $2
 echo " "
 echo " "
-echo "$2 ADDED TO SUDOERS"
+echo "$2 ADDED TO SUDO GROUP"
 echo "---------------------------------"
 echo " "
 echo " "
